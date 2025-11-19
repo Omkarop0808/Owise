@@ -4,7 +4,7 @@ import React from 'react'
 function SignUpPage() {
   return (
     <div>
-      SignupPage
+      
       <SignUp/>
     </div>
   )
