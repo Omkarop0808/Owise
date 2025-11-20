@@ -44,8 +44,8 @@ Responsive, simple, and modern interface optimized for mobile and desktop.
 ## 🏗️ Tech Stack
 
 ### **Frontend**
-- Next.js 14  
-- React 18  
+- Next.js   
+- React 
 - Tailwind CSS  
 - ShadCN UI Components  
 
