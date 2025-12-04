@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Owise – Smart Expense Sharing App  
+Inspired by Splitwise • Built using Next.js, Convex, Clerk & Inngest
 
-## Getting Started
+Owise is a modern, real-time expense sharing application designed to help friends manage shared costs easily. 
+  
+The project focuses on simplicity, automation, and a clean user experience, with secure authentication and automated email reports powered by Inngest.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔹 1. Group Expense Tracking  
+Create groups, add members, and track shared payments effortlessly with equal, percentage spliting and also exact amount involved in splitting.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔹 2. Smart Bill Splitting  
+Supports equal split, custom split, manual amount entry.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔹 3. Real-Time Sync (Convex)  
+Expense updates, settlements, and group activity sync instantly for all members and records all the settlements.
 
-## Learn More
+### 🔹 4. Secure User Authentication (Clerk)  
+Fast login/signup with social login, JWT-based backend validation.
 
-To learn more about Next.js, take a look at the following resources:
+### 🔹 5. Dashboard Overview  
+A clean summary showing:  
+- Total expenses  
+- Split balances  
+- Who owes whom  
+- Recent activity and settlements  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔹 6. Automated Email Reports (Powered by Inngest)  
+Users receive **Daily, Weekly, or Monthly** email summaries including:  
+- Total spent  
+- Group-wise breakdown  
+- Amount owed/owed to you  
+- Latest transactions  
+Inngest handles the scheduling, background jobs, and reliability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔹 7. Clean UI with Tailwind + ShadCN  
+Responsive, simple, and modern interface optimized for mobile and desktop.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Frontend**
+- Next.js   
+- React 
+- Tailwind CSS  
+- ShadCN UI Components  
+
+### **Backend**
+- Convex (database + serverless functions)  
+- Convex queries, mutations, actions  
+- Real-time updates  
+
+### **Authentication**
+- Clerk (OAuth, email login, JWT validation)
+
+### **Automations**
+- Inngest (scheduled workflows & email report generation)  
+- Resend  for sending emails  
+
+---
+
+## 🔧 Environment Variables
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CONVEX_DEPLOY_KEY
+CLERK_SECRET_KEY=
+CLERK_JWT_ISSUER_DOMAIN=
+CONVEX_DEPLOYMENT
+NEXT_PUBLIC_CONVEX_URL=
+
+INNGEST_EVENT_KEY=
+INNGEST_SIGNING_KEY=
+
+RESEND_API_KEY=
+GEMINI_API_KEY=
+
+
+
+
+
