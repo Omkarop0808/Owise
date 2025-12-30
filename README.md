@@ -1,82 +1,98 @@
-# Owise – Smart Expense Sharing App  
-Inspired by Splitwise • Built using Next.js, Convex, Clerk & Inngest
+# 💸 Owise – Smart Expense Sharing App
 
-Owise is a modern, real-time expense sharing application designed to help friends manage shared costs easily. 
-  
-The project focuses on simplicity, automation, and a clean user experience, with secure authentication and automated email reports powered by Inngest.
+> **Split expenses intelligently. Settle faster. Stay synced in real time.**
 
-<img width="518" height="423" alt="Screenshot 2025-12-30 095344" src="https://github.com/user-attachments/assets/81215add-df87-402e-a457-b83e657e3f20" />
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<img width="1526" height="854" alt="Screenshot 2025-12-30 094641" src="https://github.com/user-attachments/assets/26b1dfc2-a680-4666-8b2e-bd93c189a5d3" />
-<img width="832" height="790" alt="Screenshot 2025-12-30 095257" src="https://github.com/user-attachments/assets/0465b968-a9d7-4304-be05-d3c40bbf44c2" />
+Owise is a modern, real time expense sharing application inspired by Splitwise. It helps groups manage shared expenses with clarity through flexible bill splitting, instant synchronization, and automated reporting. The focus is on simplicity, correctness, and zero manual overhead.
 
-
-
-
-
-## 🚀 Features
-
-### 🔹 1. Group Expense Tracking  
-Create groups, add members, and track shared payments effortlessly with equal, percentage spliting and also exact amount involved in splitting.
-
-### 🔹 2. Smart Bill Splitting  
-Supports equal split, custom split, manual amount entry.
-
-### 🔹 3. Real-Time Sync (Convex)  
-Expense updates, settlements, and group activity sync instantly for all members and records all the settlements.
-
-### 🔹 4. Secure User Authentication (Clerk)  
-Fast login/signup with social login, JWT-based backend validation.
-
-### 🔹 5. Dashboard Overview  
-A clean summary showing:  
-- Total expenses  
-- Split balances  
-- Who owes whom  
-- Recent activity and settlements  
-
-### 🔹 6. Automated Email Reports (Powered by Inngest)  
-Users receive **Daily, Weekly, or Monthly** email summaries including:  
-- Total spent  
-- Group-wise breakdown  
-- Amount owed/owed to you  
-- Latest transactions  
-Inngest handles the scheduling, background jobs, and reliability.
-
-### 🔹 7. Clean UI with Tailwind + ShadCN  
-Responsive, simple, and modern interface optimized for mobile and desktop.
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react)
+![Convex](https://img.shields.io/badge/Convex-black?style=for-the-badge)
+![Clerk](https://img.shields.io/badge/Clerk-purple?style=for-the-badge)
+![Inngest](https://img.shields.io/badge/Inngest-black?style=for-the-badge)
 
 ---
 
-## 🏗️ Tech Stack
+## ✨ Features
 
-### **Frontend**
-- Next.js   
-- React 
-- Tailwind CSS  
-- ShadCN UI Components  
+<img width="518" height="423" alt="Owise Overview" src="https://github.com/user-attachments/assets/81215add-df87-402e-a457-b83e657e3f20" />
 
-### **Backend**
-- Convex (database + serverless functions)  
-- Convex queries, mutations, actions  
-- Real-time updates  
+### 👥 Group Expense Management
+- Create groups and add members
+- Track shared expenses transparently
+- Clear balance calculations for every member
 
-### **Authentication**
+### 💱 Smart Bill Splitting
+- Equal split
+- Percentage based split
+- Exact amount split
+- Accurate multi member settlements
+
+### ⚡ Real Time Sync
+- Instant updates for all users
+- Live balance recalculation
+- Real time settlements and activity tracking using Convex
+
+### 🔐 Secure Authentication
+- Clerk based authentication
+- Social login and email login
+- Secure sessions and JWT validation
+
+### 📊 Dashboard Overview
+- Total group expenses
+- Who owes whom
+- Pending settlements
+- Recent activity timeline
+
+### 📧 Automated Email Reports
+- Daily, weekly, or monthly summaries
+- Group wise expense breakdown
+- Amount owed and owed to you
+- Powered by Inngest background jobs
+
+### 🎨 Clean Responsive UI
+- Built with Tailwind CSS and ShadCN
+- Optimized for mobile and desktop
+- Simple and distraction free design
+
+---
+
+## 📸 Screenshots
+
+<img width="1526" height="854" alt="Dashboard" src="https://github.com/user-attachments/assets/26b1dfc2-a680-4666-8b2e-bd93c189a5d3" />
+<img width="832" height="790" alt="Group View" src="https://github.com/user-attachments/assets/0465b968-a9d7-4304-be05-d3c40bbf44c2" />
+
+---
+
+## 🚀 Tech Stack
+
+### Frontend
+- Next.js
+- React
+- Tailwind CSS
+- ShadCN UI
+
+### Backend
+- Convex (database + serverless functions)
+- Real time queries, mutations, and actions
+
+### Authentication
 - Clerk (OAuth, email login, JWT validation)
 
-### **Automations**
-- Inngest (scheduled workflows & email report generation)  
-- Resend  for sending emails  
+### Automation
+- Inngest (scheduled workflows and background jobs)
+- Resend (email delivery)
 
 ---
 
 ## 🔧 Environment Variables
 
+```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CONVEX_DEPLOY_KEY
 CLERK_SECRET_KEY=
 CLERK_JWT_ISSUER_DOMAIN=
-CONVEX_DEPLOYMENT
+
+CONVEX_DEPLOYMENT=
+CONVEX_DEPLOY_KEY=
 NEXT_PUBLIC_CONVEX_URL=
 
 INNGEST_EVENT_KEY=
@@ -85,7 +101,52 @@ INNGEST_SIGNING_KEY=
 RESEND_API_KEY=
 GEMINI_API_KEY=
 
+owise/
+├── app/                 # Next.js App Router
+├── components/          # Reusable UI components
+├── convex/              # Convex schema and functions
+├── emails/              # Email templates
+├── lib/                 # Utilities and helpers
+├── hooks/               # Custom hooks
+└── public/              # Static assets
 
+🔄 Automation Details
+Background Jobs
 
+Scheduled email summaries
 
+Automated report generation
 
+Reliable execution with retries via Inngest
+
+Email Reports
+
+Expense summaries
+
+Group wise breakdowns
+
+Settlement status updates
+
+🚀 Deployment
+
+Recommended deployment using Vercel with Convex hosting.
+
+Steps:
+
+Connect GitHub repository to Vercel
+
+Configure environment variables
+
+Deploy on push to main branch
+
+🙏 Acknowledgments
+
+Convex for real time backend
+
+Clerk for authentication
+
+Inngest for background workflows
+
+Resend for email delivery
+
+<div align="center"> <strong>Built to make shared expenses painless</strong> <br /> <sub>Owise – smarter expense sharing</sub> </div> ```
