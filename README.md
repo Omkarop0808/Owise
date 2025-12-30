@@ -83,6 +83,7 @@ Owise is a modern, real time expense sharing application inspired by Splitwise. 
 - Resend (email delivery)
 
 ---
+
 owise/
 ├── app/                 # Next.js App Router
 ├── components/          # Reusable UI components
@@ -91,6 +92,7 @@ owise/
 ├── lib/                 # Utilities and helpers
 ├── hooks/               # Custom hooks
 └── public/              # Static assets
+---
 
 🔄 Automation Details
 Background Jobs
