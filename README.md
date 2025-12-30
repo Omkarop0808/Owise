@@ -6,6 +6,13 @@ Owise is a modern, real-time expense sharing application designed to help friend
 The project focuses on simplicity, automation, and a clean user experience, with secure authentication and automated email reports powered by Inngest.
 
 ---
+<img width="518" height="423" alt="Screenshot 2025-12-30 095344" src="https://github.com/user-attachments/assets/81215add-df87-402e-a457-b83e657e3f20" />
+<img width="1526" height="854" alt="Screenshot 2025-12-30 094641" src="https://github.com/user-attachments/assets/26b1dfc2-a680-4666-8b2e-bd93c189a5d3" />
+<img width="832" height="790" alt="Screenshot 2025-12-30 095257" src="https://github.com/user-attachments/assets/0465b968-a9d7-4304-be05-d3c40bbf44c2" />
+<img width="583" height="519" alt="Screenshot 2025-12-30 095334" src="https://github.com/user-attachments/assets/bb3c93aa-d669-4b5e-8f5d-2faad7c8c584" />
+
+
+
 
 ## 🚀 Features
 
