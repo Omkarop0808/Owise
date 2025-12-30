@@ -83,24 +83,6 @@ Owise is a modern, real time expense sharing application inspired by Splitwise. 
 - Resend (email delivery)
 
 ---
-
-## 🔧 Environment Variables
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-CLERK_JWT_ISSUER_DOMAIN=
-
-CONVEX_DEPLOYMENT=
-CONVEX_DEPLOY_KEY=
-NEXT_PUBLIC_CONVEX_URL=
-
-INNGEST_EVENT_KEY=
-INNGEST_SIGNING_KEY=
-
-RESEND_API_KEY=
-GEMINI_API_KEY=
-
 owise/
 ├── app/                 # Next.js App Router
 ├── components/          # Reusable UI components
@@ -150,3 +132,21 @@ Inngest for background workflows
 Resend for email delivery
 
 <div align="center"> <strong>Built to make shared expenses painless</strong> <br /> <sub>Owise – smarter expense sharing</sub> </div> ```
+
+
+### 🔧 Environment Variables
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+CLERK_JWT_ISSUER_DOMAIN=
+
+CONVEX_DEPLOYMENT=
+CONVEX_DEPLOY_KEY=
+NEXT_PUBLIC_CONVEX_URL=
+
+INNGEST_EVENT_KEY=
+INNGEST_SIGNING_KEY=
+
+RESEND_API_KEY=
+GEMINI_API_KEY=
